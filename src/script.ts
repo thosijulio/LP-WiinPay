@@ -7,3 +7,4 @@ const includeHTML = async (id: string, filePath: string) => {
 };
 
 includeHTML("header", "/partials/header.html");
+includeHTML("hero", "/partials/hero.html");

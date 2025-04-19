@@ -12,18 +12,24 @@ header {
   height: 100px;
   justify-content: space-between;
   padding: 0 20px;
+  position: fixed;
   width: 100dvw;
 }
 
 #header-button {
-  border: 1px solid white;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 15px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 8px;
+  border-radius: 18px 6px;
   height: 50px;
+  outline-color: rgba(255, 255, 255, 1);
+  outline-style: solid;
+  outline-width: 1px;
   padding: 5px;
   width: 220px;
+}
+
+#header-button:hover {
+  animation: btn-animation 2s ease-in-out infinite, btn-animation-l .5s ease-in infinite;
+
+  transform: scale(0.97);
 }
 
 #header-button>div {
@@ -31,6 +37,7 @@ header {
   background: var(--var-color-gradient);
   border-bottom-right-radius: 15px;
   border-top-left-radius: 15px;
+  box-shadow: inset 0px 0px 20px rgb(232, 192, 245), 0px 10px 20px rgba(1, 1, 1, .5);
   display: flex;
   flex-direction: row;
   font-size: 2.8vw;
@@ -40,15 +47,27 @@ header {
   width: 100%;
 }
 
+#header-button>div:hover {
+  box-shadow: inset 0px 0px 40px rgb(232, 192, 245), 0px 10px 20px rgba(255, 255, 255, .3);
+}
+
 #header-button>div>span {
   align-items: center;
   display: inline-flex;
   gap: 10px;
 }
 
+
+
 #header-button svg {
   display: inline;
   height: 11px;
   margin-left: 10px;
   width: 11px;
+}
+
+#header-button:hover svg {
+  animation: seta 1s ease-in-out infinite;
+  transform: rotate(45deg);
+  transition: 0.5 ease-in;
 }

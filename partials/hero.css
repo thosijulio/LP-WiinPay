@@ -1,0 +1,37 @@
+#hero {
+  align-items: center;
+  align-self: auto;
+  color: var(--var-color-primary);
+  display: flex;
+  flex-basis: auto;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 100%;
+  justify-content: flex-start;
+  margin-top: 110px;
+  width: 100%;
+}
+
+#hero h3 {
+  font-size: 8vw;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin-bottom: 30px;
+}
+
+#hero p {
+  font-size: 4.2vw;
+  font-weight: 400;
+  line-height: 1em;
+}
+
+#hero p .detail-bg {
+  color: #D8B4FE;
+  background-color: #7E22CE4D;
+}
+
+#hero p #detail-02 {
+  font-size: 14px;
+  line-height: 14px;
+}
