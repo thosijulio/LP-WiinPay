@@ -1,0 +1,75 @@
+#strips-texts {
+  align-items: center;
+  display: flex;
+  flex-basis: auto;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  max-width: 100%;
+  min-height: 120px;
+  width: 100%;
+}
+
+#strips-texts>div {
+  animation: btn-animation 3s ease-in-out infinite -3s;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  box-shadow: inset 0px 0px 20px rgba(255, 255, 255, .5), 0px 10px 20px rgba(1, 1, 1, .5);
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  max-width: 100%;
+  outline-offset: 3px;
+  overflow: hidden;
+  padding: 15px 0px;
+  white-space: nowrap;
+  width: 100%;
+}
+
+#strips-texts>div:nth-of-type(1) {
+  background: var(--var-color-gradient);
+}
+
+#strips-texts>div:nth-of-type(2) {
+  background: linear-gradient(90deg, #A855F7 45.88%, #D94EFF33 100%);
+  transform: rotate(-2deg);
+  margin-top: -10px;
+  z-index: 2;
+}
+
+#strips-texts>div>div {
+  align-self: flex-start;
+  animation: 25s strip-animation linear infinite;
+  box-sizing: border-box;
+  display: inline-flex;
+  font-size: 20px;
+  font-weight: 700;
+  align-items: center;
+  max-width: 100%;
+  position: relative;
+  text-align: left;
+  white-space: nowrap !important;
+  width: 100%;
+}
+
+#strips-texts>div>div>div {
+  animation: 25s strip-animation linear infinite;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  max-width: 100%;
+  transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
+  width: 100%;
+}
+
+#strips-texts>div>div>div>img {
+  box-sizing: border-box;
+}
+
+#strips-texts>div>div>div>span {
+  margin: 0px 25px;
+}

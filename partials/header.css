@@ -14,6 +14,7 @@ header {
   padding: 0 20px;
   position: fixed;
   width: 100dvw;
+  z-index: 9999;
 }
 
 #header-button {

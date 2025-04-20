@@ -1,0 +1,79 @@
+#subhero-1 {
+  align-items: center;
+  align-self: auto;
+  color: var(--var-color-primary);
+  display: flex;
+  flex-basis: auto;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: flex-start;
+  overflow-x: hidden;
+  max-width: 100%;
+  margin-top: 110px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#subhero-1-texts {
+  padding: 0px 50px;
+  height: auto;
+}
+
+#subhero-1 h3 {
+  font-size: 8vw;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin-bottom: 30px;
+}
+
+#subhero-1 p {
+  font-size: 4.2vw;
+  font-weight: 400;
+  line-height: 1em;
+}
+
+#subhero-1-texts .detail-bg {
+  color: #D8B4FE;
+  background-color: #7E22CE4D;
+}
+
+#subhero-1-texts .detail-bg.color {
+  color: rgb(251, 0, 255)
+}
+
+#subhero-1-texts #detail-02 {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+#subhero-1-button {
+  box-sizing: border-box;
+  padding: 0px 50px 20px 50px;
+  width: 100%;
+}
+
+#subhero-1-button-wrapper {
+  width: 100%;
+}
+
+#subhero-1-button-content {
+  width: 100%;
+}
+
+#subhero-1-button-content>a {
+  animation: btn-animation 3s ease-in-out;
+  background: var(--var-color-gradient);
+  border: 1px solid #1a171c;
+  border-radius: 18px 6px;
+  box-sizing: border-box;
+  box-shadow: inset 0px 0px 20px rgba(255, 255, 255, 1), 0px 10px 20px rgba(1, 1, 1, .5);
+  color: black;
+  display: inline-flex;
+  font-size: 20px;
+  font-weight: 700;
+  justify-content: center;
+  outline: 1px solid white;
+  outline-offset: 3px;
+  padding: 15px 18px;
+  width: 100% !important;
+}
