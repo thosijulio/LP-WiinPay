@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "copy-static": "mkdir -p dist && cp index.html index.css favicon.ico dist/ && cp -R partials dist/ && cp -R public dist/",
+    "build": "tsc && npm run copy-static"
   },
   "keywords": [],
   "author": "",
