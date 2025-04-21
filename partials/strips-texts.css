@@ -77,3 +77,9 @@
 .strips-texts>div>div>div>span {
   margin: 0px 25px;
 }
+
+@media screen and (min-width: 720px) {
+  .strips-texts {
+    margin-top: 0px;
+  }
+}

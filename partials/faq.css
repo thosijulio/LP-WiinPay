@@ -10,9 +10,13 @@
 }
 
 #faq-section-texts-content>h3 {
-  color: var(--color-secondary);
+  color: var(--color-primary);
   font-size: 40px;
   font-weight: 700;
+}
+
+#faq-section-texts-content>p {
+  color: var(--color-paragraph);
 }
 
 #faq-section-texts-content>p:nth-of-type(2) {
@@ -165,5 +169,27 @@
 }
 
 .faq-section-infos-wrapper.active .faq-section-infos-description {
+  color: var(--color-paragraph);
   padding: 10px 15px;
+}
+
+@media screen and (min-width: 720px) {
+  #faq {
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    padding: 50px 350px;
+  }
+
+  #faq-section-texts {
+    text-align: left;
+  }
+
+  #faq-section-texts a {
+    display: none;
+  }
+
+  #faq-section-infos {
+    padding: 0px;
+  }
 }

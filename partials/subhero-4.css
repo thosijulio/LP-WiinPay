@@ -76,13 +76,11 @@
 
 #subhero-4-button-content>a {
   animation: btn-animation 3s ease-in-out;
-  background: linear-gradient(90deg,
-      rgba(251, 0, 255, 0.6) 0%,
-      rgba(251, 0, 255, 0.3) 100%);
+  background: var(--color-gradient);
   border: 1px solid #1a171c;
   border-radius: 18px 6px;
   box-sizing: border-box;
-  box-shadow: inset 0px 0px 20px rgba(251, 25, 255, 0.3), 0px 10px 20px rgba(1, 1, 1, .5);
+  box-shadow: inset 0px 0px 20px rgba(255, 255, 255, 1), 0px 10px 20px rgba(1, 1, 1, .5);
   color: black;
   display: inline-flex;
   font-size: 20px;
@@ -92,4 +90,25 @@
   outline-offset: 3px;
   padding: 15px 18px;
   width: 100% !important;
+}
+
+@media screen and (min-width: 720px) {
+  #subhero-4 {
+    padding: 60px 350px 30px 350px;
+  }
+
+  #subhero-4-content {
+    flex-direction: row;
+  }
+
+  #subhero-4-texts {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  #subhero-4-button {
+    width: 350px;
+  }
 }

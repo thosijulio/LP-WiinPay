@@ -45,6 +45,7 @@
 #subhero-3-texts>h3 {
   border-left: 2px solid var(--color-primary);
   border-right: 2px solid var(--color-primary);
+  color: var(--color-primary);
   font-size: 6.8vw;
   font-weight: 700;
   text-align: center;
@@ -52,11 +53,14 @@
 }
 
 #subhero-3-texts>h3>span {
-  color: var(--color-secondary);
+  color: var(--color-paragraph);
 }
 
 #subhero-3-image {
+  background: url(/public/images/dashboard.jpeg);
+  background-size: contain;
   border: 1px double white;
+  border-radius: 12px;
   color: white;
   height: 180px;
   width: 100%;
@@ -69,4 +73,37 @@
   flex-direction: column;
   gap: 30px;
   width: 100%;
+}
+
+@media screen and (min-width: 720px) {
+  #subhero-3 {
+    padding: 80px 350px 50px 350px;
+  }
+
+  #subhero-3-texts>h3 {
+    font-size: 46px;
+    padding: 5px 75px;
+    width: auto;
+  }
+
+  #subhero-3-image {
+    height: 348px;
+    width: 700px;
+  }
+
+  #subhero-3-cards {
+    flex-direction: row;
+    justify-content: center;
+    height: 385px;
+  }
+
+  #subhero-3-cards {
+    height: 100%;
+  }
+
+  #subhero-3-cards .subhero-card,
+  #subhero-3-cards .subhero-card-wrapper,
+  #subhero-3-cards .subhero-card-content {
+    height: 385px;
+  }
 }

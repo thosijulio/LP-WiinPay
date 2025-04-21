@@ -9,12 +9,16 @@ header {
   border-top: var(--border);
   box-sizing: border-box;
   display: flex;
-  height: 100px;
+  min-height: 100px;
   justify-content: space-between;
   padding: 0 20px;
   position: fixed;
-  width: 100dvw;
+  width: 100%;
   z-index: 9999;
+}
+
+header nav {
+  display: none;
 }
 
 #header-button {
@@ -41,7 +45,7 @@ header {
   box-shadow: inset 0px 0px 20px rgb(232, 192, 245), 0px 10px 20px rgba(1, 1, 1, .5);
   display: flex;
   flex-direction: row;
-  font-size: 2.8vw;
+  font-size: 14px;
   font-weight: 600;
   height: 100%;
   justify-content: center;
@@ -71,4 +75,56 @@ header {
   animation: seta 1s ease-in-out infinite;
   transform: rotate(45deg);
   transition: 0.5 ease-in;
+}
+
+@media screen and (max-width: 380px) {
+  #header {
+    padding: 0px 8px;
+  }
+
+  #header>img {
+    width: 80px;
+  }
+
+  #header-button {
+    max-width: 150px;
+  }
+
+  #header-button>div {
+    font-size: 10px;
+  }
+
+  #header-button svg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #header {
+    padding: 30px 350px;
+  }
+
+  #header nav {
+    color: var(--color-primary);
+    display: flex;
+    font-size: 20px;
+    justify-content: flex-end;
+    gap: 30px;
+    flex-grow: 1;
+    margin: 0px 40px;
+  }
+
+  #header img {
+    width: 180px;
+  }
+
+  #header-button {
+    height: auto;
+    width: auto;
+  }
+
+  #header-button a {
+    font-size: 16px;
+    padding: 20px 30px;
+  }
 }

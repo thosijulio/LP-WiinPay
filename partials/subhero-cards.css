@@ -69,7 +69,7 @@
 }
 
 .subhero-card-content>h3>span {
-  color: rgb(251, 0, 255);
+  color: var(--color-secondary);
 }
 
 .subhero-card-content>p {
@@ -117,8 +117,29 @@
 }
 
 .subhero-card-v2 h3 {
-  color: var(--color-secondary);
+  color: var(--color-primary);
   font-size: 32px;
   line-height: 32px;
   font-weight: 700;
+}
+
+.subhero-card-v2 p {
+  color: var(--color-paragraph);
+}
+
+@media screen and (min-width:720px) {
+  #subhero-1-cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #subhero-1-cards h3 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  #subhero-1-cards p {
+    font-size: 18px;
+    line-height: 19px;
+  }
 }

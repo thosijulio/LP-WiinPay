@@ -32,6 +32,7 @@
 }
 
 #subhero-1 p {
+  color: var(--color-paragraph);
   font-size: 4.2vw;
   font-weight: 400;
   line-height: 1em;
@@ -43,10 +44,11 @@
 }
 
 #subhero-1-texts .detail-bg.color {
-  color: rgb(251, 0, 255)
+  color: var(--color-secondary)
 }
 
 #subhero-1-texts #detail-02 {
+  color: var(--color-pink);
   font-size: 14px;
   line-height: 14px;
 }
@@ -81,4 +83,28 @@
   outline-offset: 3px;
   padding: 15px 18px;
   width: 100% !important;
+}
+
+@media screen and (min-width: 720px) {
+  #subhero-1 {
+    padding: 0px 350px;
+  }
+
+  #subhero-1-texts {
+    padding: 0px;
+  }
+
+  #subhero-1-texts h3 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  #subhero-1-texts p {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  #subhero-1-button {
+    width: 550px;
+  }
 }
