@@ -23,6 +23,8 @@
   box-sizing: border-box;
   color: var(--color-primary);
   display: flex;
+  flex-direction: column;
+  gap: 20px;
   justify-content: center;
   width: 100%;
 }
