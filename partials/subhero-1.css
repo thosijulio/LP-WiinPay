@@ -1,7 +1,7 @@
 #subhero-1 {
   align-items: center;
   align-self: auto;
-  color: var(--var-color-primary);
+  color: var(--color-primary);
   display: flex;
   flex-basis: auto;
   flex-direction: column;
@@ -19,11 +19,16 @@
   height: auto;
 }
 
-#subhero-1 h3 {
+#subhero-1-texts h3 {
   font-size: 8vw;
+  margin-bottom: 30px;
+}
+
+#subhero-1-cards h3 {
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.1em;
-  margin-bottom: 30px;
+
 }
 
 #subhero-1 p {
@@ -62,7 +67,7 @@
 
 #subhero-1-button-content>a {
   animation: btn-animation 3s ease-in-out;
-  background: var(--var-color-gradient);
+  background: var(--color-gradient);
   border: 1px solid #1a171c;
   border-radius: 18px 6px;
   box-sizing: border-box;

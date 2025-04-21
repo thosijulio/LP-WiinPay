@@ -1,12 +1,12 @@
 header {
   align-items: center;
   background-attachment: fixed;
-  background-image: var(--var-background-header);
+  background-image: var(--background-header);
   background-color: #0d0d0de3;
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
-  border-bottom: var(--var-border);
-  border-top: var(--var-border);
+  border-bottom: var(--border);
+  border-top: var(--border);
   box-sizing: border-box;
   display: flex;
   height: 100px;
@@ -35,7 +35,7 @@ header {
 
 #header-button>div {
   align-items: center;
-  background: var(--var-color-gradient);
+  background: var(--color-gradient);
   border-bottom-right-radius: 15px;
   border-top-left-radius: 15px;
   box-shadow: inset 0px 0px 20px rgb(232, 192, 245), 0px 10px 20px rgba(1, 1, 1, .5);

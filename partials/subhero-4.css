@@ -1,0 +1,95 @@
+#subhero-4 {
+  border-radius: 30px 30px 0px 0px;
+  margin-top: -1px;
+  padding: 60px 30px 30px 30px;
+  position: relative;
+}
+
+#subhero-4-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#subhero-4-content {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+
+#subhero-4-texts {
+  box-sizing: border-box;
+  color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#subhero-4-texts>h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: left;
+  width: 100%;
+}
+
+#subhero-4-texts>h3>span {
+  color: var(--color-secondary);
+}
+
+#subhero-4-image {
+  border: 1px double white;
+  color: white;
+  height: 180px;
+  width: 100%;
+}
+
+#subhero-4-cards {
+  align-items: center;
+  color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+
+
+#subhero-4-button-wrapper {
+  width: 100%;
+}
+
+#subhero-4-button-content {
+  width: 100%;
+}
+
+
+
+#subhero-4-button {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+
+
+#subhero-4-button-content>a {
+  animation: btn-animation 3s ease-in-out;
+  background: linear-gradient(90deg,
+      rgba(251, 0, 255, 0.6) 0%,
+      rgba(251, 0, 255, 0.3) 100%);
+  border: 1px solid #1a171c;
+  border-radius: 18px 6px;
+  box-sizing: border-box;
+  box-shadow: inset 0px 0px 20px rgba(251, 25, 255, 0.3), 0px 10px 20px rgba(1, 1, 1, .5);
+  color: black;
+  display: inline-flex;
+  font-size: 20px;
+  font-weight: 700;
+  justify-content: center;
+  outline: 1px solid white;
+  outline-offset: 3px;
+  padding: 15px 18px;
+  width: 100% !important;
+}

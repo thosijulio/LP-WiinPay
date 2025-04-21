@@ -7,17 +7,25 @@ const includeHTML = async (id: string, filePath: string) => {
 };
 
 Promise.all([
-  includeHTML("header", "./partials/header.html"),
-  includeHTML("hero", "./partials/hero.html"),
-  includeHTML("strips-texts", "./partials/strips-texts.html"),
-  includeHTML("subhero-1", "./partials/subhero-1.html"),
-  includeHTML("subhero-2", "./partials/subhero-2.html"),
+  includeHTML("header", "/partials/header.html"),
+  includeHTML("hero", "/partials/hero.html"),
+  includeHTML("strips-texts-1", "/partials/strips-texts.html"),
+  includeHTML("subhero-1", "/partials/subhero-1.html"),
+  includeHTML("subhero-2", "/partials/subhero-2.html"),
+  includeHTML("subhero-3", "/partials/subhero-3.html"),
+  includeHTML("subhero-4", "/partials/subhero-4.html"),
+  includeHTML("strips-texts-2", "/partials/strips-texts.html"),
+  includeHTML("faq", "/partials/faq.html"),
 ])
   .then(() => {
-    const animationScript = document.createElement("script");
-    animationScript.src = "./scrollAnimations.js";
+    const scrollAnimationScript = document.createElement("script");
+    const faqAnimationScript = document.createElement("script");
 
-    document.body.insertAdjacentElement("beforeend", animationScript);
+    scrollAnimationScript.src = "/dist/scrollAnimations.js";
+    faqAnimationScript.src = "/dist/faqAnimation.js";
+
+    document.body.insertAdjacentElement("beforeend", scrollAnimationScript);
+    document.body.insertAdjacentElement("beforeend", faqAnimationScript);
   })
   .catch(() => {
     console.error("Erro ao inserir HTMLs");

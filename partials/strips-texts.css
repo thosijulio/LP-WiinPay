@@ -1,4 +1,4 @@
-#strips-texts {
+.strips-texts {
   align-items: center;
   display: flex;
   flex-basis: auto;
@@ -12,7 +12,7 @@
   width: 100%;
 }
 
-#strips-texts>div {
+.strips-texts>div {
   animation: btn-animation 3s ease-in-out infinite -3s;
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
@@ -29,18 +29,22 @@
   width: 100%;
 }
 
-#strips-texts>div:nth-of-type(1) {
-  background: var(--var-color-gradient);
+.strips-texts>div:nth-of-type(1) {
+  background: var(--color-gradient);
 }
 
-#strips-texts>div:nth-of-type(2) {
+#strips-texts-2>div:nth-of-type(1) {
+  display: none;
+}
+
+.strips-texts>div:nth-of-type(2) {
   background: linear-gradient(90deg, #A855F7 45.88%, #D94EFF33 100%);
   transform: rotate(-2deg);
   margin-top: -10px;
   z-index: 2;
 }
 
-#strips-texts>div>div {
+.strips-texts>div>div {
   align-self: flex-start;
   animation: 25s strip-animation linear infinite;
   box-sizing: border-box;
@@ -55,7 +59,7 @@
   width: 100%;
 }
 
-#strips-texts>div>div>div {
+.strips-texts>div>div>div {
   animation: 25s strip-animation linear infinite;
   box-sizing: border-box;
   display: flex;
@@ -66,10 +70,10 @@
   width: 100%;
 }
 
-#strips-texts>div>div>div>img {
+.strips-texts>div>div>div>img {
   box-sizing: border-box;
 }
 
-#strips-texts>div>div>div>span {
+.strips-texts>div>div>div>span {
   margin: 0px 25px;
 }

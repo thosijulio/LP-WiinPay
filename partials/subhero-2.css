@@ -1,7 +1,7 @@
 #subhero-2 {
-  background-image: var(--var-background-cards), var(--var-color-gradient-opacity);
+  background-image: var(--background-cards), var(--color-gradient-opacity);
   border-radius: 30px 30px 0px 0px;
-  margin: 40px 0px;
+  margin: 40px 0px 0px;
   padding: 60px 50px 30px 50px;
   position: relative;
 }
@@ -32,11 +32,6 @@
 }
 
 
-#subhero-2-button {
-  box-sizing: border-box;
-  width: 100%;
-}
-
 #subhero-2-button-wrapper {
   width: 100%;
 }
@@ -44,6 +39,15 @@
 #subhero-2-button-content {
   width: 100%;
 }
+
+
+
+#subhero-2-button {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+
 
 #subhero-2-button-content>a {
   animation: btn-animation 3s ease-in-out;
