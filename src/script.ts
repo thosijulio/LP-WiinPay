@@ -21,8 +21,8 @@ Promise.all([
     const scrollAnimationScript = document.createElement("script");
     const faqAnimationScript = document.createElement("script");
 
-    scrollAnimationScript.src = "/scrollAnimations.js";
-    faqAnimationScript.src = "/faqAnimation.js";
+    scrollAnimationScript.src = "/dist/scrollAnimations.js";
+    faqAnimationScript.src = "/dist/faqAnimation.js";
 
     document.body.insertAdjacentElement("beforeend", scrollAnimationScript);
     document.body.insertAdjacentElement("beforeend", faqAnimationScript);
